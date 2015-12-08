@@ -18,8 +18,7 @@ class ViewController: UIViewController {
         let camera = GMSCameraPosition.cameraWithLatitude(35.622683, longitude: 139.721104, zoom: 18)
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
-        mapView.settings.scrollGestures = true;
-        mapView.settings.zoomGestures = true;
+        mapView.settings.setAllGesturesEnabled(true);
         mapView.settings.myLocationButton = true;
         self.view = mapView
         
