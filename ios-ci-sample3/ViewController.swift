@@ -18,7 +18,16 @@ class ViewController: UIViewController {
         let camera = GMSCameraPosition.cameraWithLatitude(35.622683, longitude: 139.721104, zoom: 18)
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
+        mapView.settings.scrollGestures = true;
+        mapView.settings.zoomGestures = true;
+        mapView.settings.myLocationButton = true;
         self.view = mapView
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2DMake(35.622683, 139.721104)
+        marker.title = "アクトインディ"
+        marker.snippet = "東京都品川区西五反田8-2-8 五反田佑気ビル7F"
+        marker.map = mapView
     }
 
     override func didReceiveMemoryWarning() {
