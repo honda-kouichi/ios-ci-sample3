@@ -15,6 +15,8 @@
 		28BEF2761C16AD66006BD370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BEF2741C16AD66006BD370 /* LaunchScreen.storyboard */; };
 		28BEF2811C16AD66006BD370 /* ios_ci_sample3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF2801C16AD66006BD370 /* ios_ci_sample3Tests.swift */; };
 		28BEF28C1C16AD66006BD370 /* ios_ci_sample3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF28B1C16AD66006BD370 /* ios_ci_sample3UITests.swift */; };
+		28BEF29C1C17D326006BD370 /* GeneralUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF29B1C17D326006BD370 /* GeneralUtility.swift */; };
+		28BEF29E1C17D3DE006BD370 /* GeneralUtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF29D1C17D3DE006BD370 /* GeneralUtilityTest.swift */; };
 		B734F587AA88798280E459F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFB1723B79ADFA97663C755 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		28BEF2871C16AD66006BD370 /* ios-ci-sample3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-ci-sample3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BEF28B1C16AD66006BD370 /* ios_ci_sample3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_ci_sample3UITests.swift; sourceTree = "<group>"; };
 		28BEF28D1C16AD66006BD370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28BEF29B1C17D326006BD370 /* GeneralUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralUtility.swift; path = ../../GeneralUtility.swift; sourceTree = "<group>"; };
+		28BEF29D1C17D3DE006BD370 /* GeneralUtilityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUtilityTest.swift; sourceTree = "<group>"; };
 		977BB2D94CC5F99EB13889FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9BFB1723B79ADFA97663C755 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22E90280243481F51521129 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,8 +110,9 @@
 		28BEF2671C16AD66006BD370 /* ios-ci-sample3 */ = {
 			isa = PBXGroup;
 			children = (
+				28BEF29A1C17D2F0006BD370 /* Utility */,
+				28BEF2991C17D2D6006BD370 /* ViewController */,
 				28BEF2681C16AD66006BD370 /* AppDelegate.swift */,
-				28BEF26A1C16AD66006BD370 /* ViewController.swift */,
 				28BEF26C1C16AD66006BD370 /* Main.storyboard */,
 				28BEF2721C16AD66006BD370 /* Assets.xcassets */,
 				28BEF2741C16AD66006BD370 /* LaunchScreen.storyboard */,
@@ -122,6 +127,7 @@
 			children = (
 				28BEF2801C16AD66006BD370 /* ios_ci_sample3Tests.swift */,
 				28BEF2821C16AD66006BD370 /* Info.plist */,
+				28BEF29D1C17D3DE006BD370 /* GeneralUtilityTest.swift */,
 			);
 			path = "ios-ci-sample3Tests";
 			sourceTree = "<group>";
@@ -133,6 +139,22 @@
 				28BEF28D1C16AD66006BD370 /* Info.plist */,
 			);
 			path = "ios-ci-sample3UITests";
+			sourceTree = "<group>";
+		};
+		28BEF2991C17D2D6006BD370 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28BEF26A1C16AD66006BD370 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		28BEF29A1C17D2F0006BD370 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				28BEF29B1C17D326006BD370 /* GeneralUtility.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		4FBDAE697BE0F86896573B66 /* Frameworks */ = {
@@ -336,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BEF2711C16AD66006BD370 /* ios_ci_sample3.xcdatamodeld in Sources */,
+				28BEF29C1C17D326006BD370 /* GeneralUtility.swift in Sources */,
 				28BEF26B1C16AD66006BD370 /* ViewController.swift in Sources */,
 				28BEF2691C16AD66006BD370 /* AppDelegate.swift in Sources */,
 			);
@@ -346,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BEF2811C16AD66006BD370 /* ios_ci_sample3Tests.swift in Sources */,
+				28BEF29E1C17D3DE006BD370 /* GeneralUtilityTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Takamichi Shimomoto (53MAN3G3Z6)";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "ios-ci-sample3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.ios-ci-sample3";
@@ -497,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Takamichi Shimomoto (53MAN3G3Z6)";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "ios-ci-sample3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.ios-ci-sample3";
@@ -509,10 +535,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ios-ci-sample3Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.ios-ci-sample3Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-ci-sample3.app/ios-ci-sample3";
 			};
 			name = Debug;
@@ -521,10 +549,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ios-ci-sample3Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.ios-ci-sample3Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-ci-sample3.app/ios-ci-sample3";
 			};
 			name = Release;
@@ -532,10 +562,12 @@
 		28BEF2971C16AD66006BD370 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ios-ci-sample3UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.ios-ci-sample3UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_TARGET_NAME = "ios-ci-sample3";
 				USES_XCTRUNNER = YES;
 			};
@@ -544,10 +576,12 @@
 		28BEF2981C16AD66006BD370 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ios-ci-sample3UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.ios-ci-sample3UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_TARGET_NAME = "ios-ci-sample3";
 				USES_XCTRUNNER = YES;
 			};
