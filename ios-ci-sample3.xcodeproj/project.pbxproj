@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2811F25C1C18088B0047B908 /* GeneralUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F25B1C18088B0047B908 /* GeneralUtility.swift */; };
 		28BEF2691C16AD66006BD370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF2681C16AD66006BD370 /* AppDelegate.swift */; };
 		28BEF26B1C16AD66006BD370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF26A1C16AD66006BD370 /* ViewController.swift */; };
 		28BEF26E1C16AD66006BD370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BEF26C1C16AD66006BD370 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		28BEF2761C16AD66006BD370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BEF2741C16AD66006BD370 /* LaunchScreen.storyboard */; };
 		28BEF2811C16AD66006BD370 /* ios_ci_sample3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF2801C16AD66006BD370 /* ios_ci_sample3Tests.swift */; };
 		28BEF28C1C16AD66006BD370 /* ios_ci_sample3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF28B1C16AD66006BD370 /* ios_ci_sample3UITests.swift */; };
-		28BEF29C1C17D326006BD370 /* GeneralUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF29B1C17D326006BD370 /* GeneralUtility.swift */; };
 		28BEF29E1C17D3DE006BD370 /* GeneralUtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF29D1C17D3DE006BD370 /* GeneralUtilityTest.swift */; };
 		B734F587AA88798280E459F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFB1723B79ADFA97663C755 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2811F25B1C18088B0047B908 /* GeneralUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUtility.swift; sourceTree = "<group>"; };
 		28BEF2651C16AD66006BD370 /* ios-ci-sample3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-ci-sample3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BEF2681C16AD66006BD370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BEF26A1C16AD66006BD370 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		28BEF2871C16AD66006BD370 /* ios-ci-sample3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-ci-sample3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BEF28B1C16AD66006BD370 /* ios_ci_sample3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_ci_sample3UITests.swift; sourceTree = "<group>"; };
 		28BEF28D1C16AD66006BD370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28BEF29B1C17D326006BD370 /* GeneralUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralUtility.swift; path = ../../GeneralUtility.swift; sourceTree = "<group>"; };
 		28BEF29D1C17D3DE006BD370 /* GeneralUtilityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUtilityTest.swift; sourceTree = "<group>"; };
 		977BB2D94CC5F99EB13889FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9BFB1723B79ADFA97663C755 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,7 +152,7 @@
 		28BEF29A1C17D2F0006BD370 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				28BEF29B1C17D326006BD370 /* GeneralUtility.swift */,
+				2811F25B1C18088B0047B908 /* GeneralUtility.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BEF2711C16AD66006BD370 /* ios_ci_sample3.xcdatamodeld in Sources */,
-				28BEF29C1C17D326006BD370 /* GeneralUtility.swift in Sources */,
+				2811F25C1C18088B0047B908 /* GeneralUtility.swift in Sources */,
 				28BEF26B1C16AD66006BD370 /* ViewController.swift in Sources */,
 				28BEF2691C16AD66006BD370 /* AppDelegate.swift in Sources */,
 			);
@@ -495,7 +495,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "574fa281-8167-45f8-abec-0a6465b93335";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -527,7 +527,7 @@
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "ios-ci-sample3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.ios-ci-sample3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "574fa281-8167-45f8-abec-0a6465b93335";
@@ -556,7 +556,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ios-ci-sample3Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.ios-ci-sample3Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -585,7 +585,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ios-ci-sample3UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.ios-ci-sample3UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
