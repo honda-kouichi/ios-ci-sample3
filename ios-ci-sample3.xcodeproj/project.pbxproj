@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2811F25C1C18088B0047B908 /* GeneralUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F25B1C18088B0047B908 /* GeneralUtility.swift */; };
+		283AA4C11C1EB4AD00058656 /* ios_ci_sample3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF2801C16AD66006BD370 /* ios_ci_sample3Tests.swift */; };
 		28BEF2691C16AD66006BD370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF2681C16AD66006BD370 /* AppDelegate.swift */; };
 		28BEF26B1C16AD66006BD370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF26A1C16AD66006BD370 /* ViewController.swift */; };
 		28BEF26E1C16AD66006BD370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BEF26C1C16AD66006BD370 /* Main.storyboard */; };
 		28BEF2711C16AD66006BD370 /* ios_ci_sample3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF26F1C16AD66006BD370 /* ios_ci_sample3.xcdatamodeld */; };
 		28BEF2731C16AD66006BD370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BEF2721C16AD66006BD370 /* Assets.xcassets */; };
 		28BEF2761C16AD66006BD370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BEF2741C16AD66006BD370 /* LaunchScreen.storyboard */; };
-		28BEF2811C16AD66006BD370 /* ios_ci_sample3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF2801C16AD66006BD370 /* ios_ci_sample3Tests.swift */; };
 		28BEF28C1C16AD66006BD370 /* ios_ci_sample3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF28B1C16AD66006BD370 /* ios_ci_sample3UITests.swift */; };
 		28BEF29E1C17D3DE006BD370 /* GeneralUtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF29D1C17D3DE006BD370 /* GeneralUtilityTest.swift */; };
 		B734F587AA88798280E459F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFB1723B79ADFA97663C755 /* libPods.a */; };
@@ -368,8 +368,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28BEF2811C16AD66006BD370 /* ios_ci_sample3Tests.swift in Sources */,
 				28BEF29E1C17D3DE006BD370 /* GeneralUtilityTest.swift in Sources */,
+				283AA4C11C1EB4AD00058656 /* ios_ci_sample3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +442,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -488,6 +489,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
