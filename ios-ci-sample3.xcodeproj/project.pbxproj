@@ -463,6 +463,7 @@
 				PROVISIONING_PROFILE = "574fa281-8167-45f8-abec-0a6465b93335";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -506,6 +507,7 @@
 				PROVISIONING_PROFILE = "574fa281-8167-45f8-abec-0a6465b93335";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};
