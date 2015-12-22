@@ -32,4 +32,24 @@ class GeneralUtilityTest: XCTestCase {
         }
     }
     
+    func testCalcMultipleNormal()
+    {
+        let result = GeneralUtility.calcMultiple(2);
+        XCTAssert(result == 4);
+    }
+    func testCalcMultipleZero()
+    {
+        let result = GeneralUtility.calcMultiple(0);
+        XCTAssert(result == 0);
+    }
+    func testCalcMultipleMax()
+    {
+        let result = GeneralUtility.calcMultiple(Int.max);
+        XCTAssert(result == Int.max);
+    }
+    func testCalcMultipleMin()
+    {
+        let result = GeneralUtility.calcMultiple(Int.min);
+        XCTAssert(result == Int.min);
+    }
 }

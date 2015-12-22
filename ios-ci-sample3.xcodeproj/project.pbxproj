@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2811F25C1C18088B0047B908 /* GeneralUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F25B1C18088B0047B908 /* GeneralUtility.swift */; };
 		283AA4C11C1EB4AD00058656 /* ios_ci_sample3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF2801C16AD66006BD370 /* ios_ci_sample3Tests.swift */; };
+		28BDBEA71C28F2180008E31D /* GeneralUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F25B1C18088B0047B908 /* GeneralUtility.swift */; };
 		28BEF2691C16AD66006BD370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF2681C16AD66006BD370 /* AppDelegate.swift */; };
 		28BEF26B1C16AD66006BD370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEF26A1C16AD66006BD370 /* ViewController.swift */; };
 		28BEF26E1C16AD66006BD370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BEF26C1C16AD66006BD370 /* Main.storyboard */; };
@@ -369,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BEF29E1C17D3DE006BD370 /* GeneralUtilityTest.swift in Sources */,
+				28BDBEA71C28F2180008E31D /* GeneralUtility.swift in Sources */,
 				283AA4C11C1EB4AD00058656 /* ios_ci_sample3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +489,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -545,6 +548,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "ios-ci-sample3Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -560,6 +564,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "ios-ci-sample3Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;

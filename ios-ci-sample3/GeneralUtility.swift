@@ -7,16 +7,16 @@
 //
 
 import Foundation
-import GoogleMaps
 
 class GeneralUtility
-{
-    static func makeActindiMarker()->GMSMarker
+{    
+    // テストサンプル関数
+    static func calcMultiple(value:Int)->Int
     {
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(35.622683, 139.721104)
-        marker.title = "アクトインディ"
-        marker.snippet = "東京都品川区西五反田8-2-8 五反田佑気ビル7F"
-        return marker
+        if(value == Int.max || value == Int.min)
+        {
+            return value;
+        }
+        return value * 2;
     }
 }
